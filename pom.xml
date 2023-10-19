@@ -13,6 +13,36 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
+ <activeProfiles>
+    <activeProfile>github</activeProfile>
+  </activeProfiles>
+
+  <profiles>
+    <profile>
+      <id>github</id>
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>https://repo1.maven.org/maven2</url>
+        </repository>
+        <repository>
+          <id>github</id>
+          <url>https://maven.pkg.github.com/jammin2shirts/test-git-packages</url>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+
+  <servers>
+    <server>
+      <id>github</id>
+      <username>jammin2shirts</username>
+      <password>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</password>
+    </server>
+  </servers>
 
 <build>
     <plugins>
