@@ -12,7 +12,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
-<settings>
+<!-- <settings>
  <activeProfiles>
     <activeProfile>github</activeProfile>
   </activeProfiles>
@@ -43,15 +43,15 @@
       <password>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</password>
     </server>
   </servers>
-  </settings>
+  </settings> -->
 
-  <!-- <distributionManagement>
+   <distributionManagement>
     <repository>
       <id>github</id>
       <name>GitHub Packages</name>
       <url>https://maven.pkg.github.com/octocat/hello-world</url>
     </repository>
-  </distributionManagement> -->
+  </distributionManagement> 
 
 <build>
     <plugins>
